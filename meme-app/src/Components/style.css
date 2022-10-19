@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: blue;
+  background-color: rgb(8, 36, 33);
   font-size: 20px;
   padding:1.25rem;
 }
@@ -31,16 +31,18 @@ img{
 
 .container{
   padding:1.25rem;
-  background-color: rgb(76, 201, 223);
+  background-color: rgb(6, 77, 87);
   border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 .container h1{
   margin: 10px;
   justify-content: center;
   align-items: center;
+  color:white;
 }
 .container .btn{
   padding:10px;
@@ -51,17 +53,20 @@ img{
 } 
 
 .btn button{
-  background-color: rgb(42, 16, 65);
+  background-color: rgb(8, 21, 24);
   border-radius: 20px;
   color:white;
-  padding:10px;
+  padding:15px;
+  font-size: 16px;
   outline:none;
   border:none;
   width:100%;
   align-items: center;
 }
- button :hover{
+
+ .btn button:hover{
   cursor: pointer;
+  color:rgb(121, 191, 219);
 }
 
 @media (min-width: 400px){
