@@ -52,6 +52,13 @@ img{
   
 } 
 
+img[alt]{
+  color:white;
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+}
+
 .btn button{
   background-color: rgb(8, 21, 24);
   border-radius: 20px;
