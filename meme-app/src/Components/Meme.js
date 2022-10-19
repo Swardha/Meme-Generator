@@ -29,7 +29,7 @@ return(
          <h1 onClick={getMeme}>{name}</h1>
          </div>
         <div className='Memes'>
-          <img src={image} alt="you will get meme soon 😂😂😂"
+          <img src={image} alt="You will get meme soon 😂😂😂"
           className="img-meme" onClick={getMeme} />
           {/* <img src={search.url} alt="" className="img-meme" /> */}
         </div>
