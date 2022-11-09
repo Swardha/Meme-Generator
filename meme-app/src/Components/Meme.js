@@ -5,9 +5,11 @@ import "../Components/style.css";
 
 const Meme = ()=>{
 
+
 const [search, setSearch] = useState("");
 const [name, setName] = useState("Search your meme");
-const [image, setImg] = useState("https://cdn.kapwing.com/collections/image_633305942c31ae00bc414f75_531028.png");
+const [image, setImg] = useState(search.url);
+
 
 const getMeme = async()=>{
      
@@ -15,11 +17,12 @@ const getMeme = async()=>{
       const response = await fetch(url);
       const data = await response.json();
       setSearch(data);
+      console.log(data);
+      console.log(search.title);
 
       setName(search.title);
       setImg(search.url);
-      // setImg(console.log(search.url));
-      
+      // setImg(console.log(search.url));   
   }
 
 return(
@@ -29,8 +32,8 @@ return(
          <h1 onClick={getMeme}>{name}</h1>
          </div>
         <div className='Memes'>
-          <img src={image} alt="You will get meme soon 😂😂😂"
-          className="img-meme" onClick={getMeme} />
+          <img src={image} alt=""
+          className="img-meme"  onClick={getMeme} />
           {/* <img src={search.url} alt="" className="img-meme" /> */}
         </div>
         <div className="head">
